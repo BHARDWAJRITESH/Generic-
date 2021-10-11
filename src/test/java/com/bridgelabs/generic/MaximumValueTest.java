@@ -5,35 +5,37 @@ import org.junit.Test;
 import junit.framework.Assert;
 
 public class MaximumValueTest {
-	MaximumValue maximum = new MaximumValue();
 	
 	@Test
 	public void shouldReturnMaximumAtFirstSpot() {
-		int value = maximum.findMaximum(70, 56, 30);
+		System.out.println();
+		int value = new MaximumValue<Integer>(70, 56, 30).findMaximum();
 		Assert.assertEquals(70, value);
-		float number = maximum.findMaximum(70.0f, 56.0f, 30.0f);
+		float number = new MaximumValue<Float>(70.0f, 56.0f, 30.0f).findMaximum();
 		Assert.assertEquals(70.0f, number, 0.0f);
-		String string = maximum.findMaximum("peach", "apple", "banana");
+		String string = new MaximumValue<String>("peach", "apple", "banana").findMaximum();
 		Assert.assertEquals("peach", string);
 	}
 	
 	@Test
 	public void shouldReturnMaximumAtSecondSpot() {
-		int value = maximum.findMaximum(56, 70, 30);
+		System.out.println();
+		int value = new MaximumValue<Integer>(56, 70, 30).findMaximum();
 		Assert.assertEquals(70, value);
-		float number = maximum.findMaximum(56.0f, 70.0f, 30.0f);
+		float number = new MaximumValue<Float>(56.0f, 70.0f, 30.0f).findMaximum();
 		Assert.assertEquals(70.0f, number, 0.0f);
-		String string = maximum.findMaximum("banana", "peach", "apple");
+		String string = new MaximumValue<String>("banana", "peach", "apple").findMaximum();
 		Assert.assertEquals("peach", string);
 	}
 	
 	@Test
 	public void shouldReturnMaximumAtThirdSpot() {
-		int value = maximum.findMaximum(30, 56, 70);
+		System.out.println();
+		int value = new MaximumValue<Integer>(30, 56, 70).findMaximum();
 		Assert.assertEquals(70, value);
-		float number = maximum.findMaximum(30.0f, 56.0f, 70.0f);
+		float number = new MaximumValue<Float>(30.0f, 56.0f, 70.0f).findMaximum();
 		Assert.assertEquals(70.0f, number, 0.0f);
-		String string = maximum.findMaximum("apple", "banana", "peach");
+		String string = new MaximumValue<String>("apple", "banana", "peach").findMaximum();
 		Assert.assertEquals("peach", string);
 	}
 
