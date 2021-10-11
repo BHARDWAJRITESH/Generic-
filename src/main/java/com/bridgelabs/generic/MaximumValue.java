@@ -38,4 +38,22 @@ public class  MaximumValue {
 		return maximum;
 		
 	}
+	/**
+	 * Creating method findMaximum which return String
+	 * @param firstValue
+	 * @param secondValue
+	 * @param thirdValue
+	 * @return
+	 */
+	public String findMaximum(String firstValue, String secondValue, String thirdValue) {
+		String maximum = firstValue;
+		if (secondValue.compareTo(maximum) > 0) {
+            maximum = secondValue;
+        }
+        if (thirdValue.compareTo(maximum) > 0) {
+            maximum = thirdValue;
+        }
+        System.out.println("Maximum String number is " + maximum);
+        return maximum;
+    }		
 }
