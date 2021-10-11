@@ -11,18 +11,24 @@ public class MaximumValueTest {
 	public void shouldReturnMaximumAtFirstSpot() {
 		int value = maximum.findMaximum(70, 56, 30);
 		Assert.assertEquals(70, value);
+		float number = maximum.findMaximum(70.0f, 56.0f, 30.0f);
+		Assert.assertEquals(70.0f, number, 0.0f);
 	}
 	
 	@Test
 	public void shouldReturnMaximumAtSecondSpot() {
 		int value = maximum.findMaximum(56, 70, 30);
 		Assert.assertEquals(70, value);
+		float number = maximum.findMaximum(56.0f, 70.0f, 30.0f);
+		Assert.assertEquals(70.0f, number, 0.0f);
 	}
 	
 	@Test
 	public void shouldReturnMaximumAtThirdSpot() {
 		int value = maximum.findMaximum(30, 56, 70);
 		Assert.assertEquals(70, value);
+		float number = maximum.findMaximum(30.0f, 56.0f, 70.0f);
+		Assert.assertEquals(70.0f, number, 0.0f);
 	}
 
 }
