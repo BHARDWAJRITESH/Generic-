@@ -22,7 +22,7 @@ public class MaximumValueTest {
 	@Test
 	public void shouldReturnMaximumAtThirdSpot() {
 		int value = maximum.findMaximum(30, 56, 70);
-		Assert.assertEquals(25, value);
+		Assert.assertEquals(70, value);
 	}
 
 }
