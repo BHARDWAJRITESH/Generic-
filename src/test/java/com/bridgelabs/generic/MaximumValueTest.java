@@ -13,7 +13,7 @@ public class MaximumValueTest {
 		Assert.assertEquals(70, value);
 		float number = maximum.findMaximum(70.0f, 56.0f, 30.0f);
 		Assert.assertEquals(70.0f, number, 0.0f);
-		String string = maximum.findMaximum("apple", "peach", "banana");
+		String string = maximum.findMaximum("peach", "apple", "banana");
 		Assert.assertEquals("peach", string);
 	}
 	
@@ -23,7 +23,7 @@ public class MaximumValueTest {
 		Assert.assertEquals(70, value);
 		float number = maximum.findMaximum(56.0f, 70.0f, 30.0f);
 		Assert.assertEquals(70.0f, number, 0.0f);
-		String string = maximum.findMaximum("banana", "apple", "peach");
+		String string = maximum.findMaximum("banana", "peach", "apple");
 		Assert.assertEquals("peach", string);
 	}
 	
@@ -33,7 +33,7 @@ public class MaximumValueTest {
 		Assert.assertEquals(70, value);
 		float number = maximum.findMaximum(30.0f, 56.0f, 70.0f);
 		Assert.assertEquals(70.0f, number, 0.0f);
-		String string = maximum.findMaximum("peach", "banana", "apple");
+		String string = maximum.findMaximum("apple", "banana", "peach");
 		Assert.assertEquals("peach", string);
 	}
 
